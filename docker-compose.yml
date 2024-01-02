@@ -1,0 +1,10 @@
+services:
+  app:
+    image: "node:18-slim"
+    build: .
+    container_name: # your project name
+    command: pnpm start
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/opt/work
